@@ -11,8 +11,8 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    // Navigate to home screen after 3 seconds
-    Timer(Duration(seconds: 3), () {
+    // Navigate to home screen after 2.5 seconds
+    Timer(Duration(seconds: 2.5), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => HomeScreen()), 
@@ -35,7 +35,7 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.assignment_turned_in, size: 100, color: Colors.white),
+            Icon(Icons.assignment_turned_in, size: 120, color: Colors.white),
             SizedBox(height: 20),
             Text(
               "Task Tracker",
