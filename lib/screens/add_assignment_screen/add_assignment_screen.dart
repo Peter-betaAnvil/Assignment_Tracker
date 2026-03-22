@@ -18,7 +18,9 @@ class _AddAssignmentScreenState extends State<AddAssignmentScreen> {
         padding: const EdgeInsets.all(16),
         child: Column(
           children:[
-
+            TextField(
+ 
+            )
           ]
         )
       )
