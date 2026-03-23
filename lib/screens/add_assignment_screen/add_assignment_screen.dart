@@ -19,8 +19,11 @@ class _AddAssignmentScreenState extends State<AddAssignmentScreen> {
         child: Column(
           children:[
             TextField(
- 
-            )
+              decoration: const InputDecoration(
+                labelText: "Course",
+                border: OutlineInputBorder(),
+              ),
+            ),
           ]
         )
       )
