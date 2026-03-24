@@ -20,6 +20,15 @@ class _AddAssignmentScreenState extends State<AddAssignmentScreen> {
           children:[
             TextField(
               decoration: const InputDecoration(
+                labelText: "Assignment Title",
+                border: OutlineInputBorder(),
+              ),
+            ),
+
+            const SizedBox(height: 16);
+
+            TextField(
+              decoration: const InputDecoration(
                 labelText: "Course",
                 border: OutlineInputBorder(),
               ),
