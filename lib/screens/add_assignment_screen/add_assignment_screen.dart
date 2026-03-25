@@ -8,6 +8,13 @@ class AddAssignmentScreen extends StatefulWidget {
 }
 
 class _AddAssignmentScreenState extends State<AddAssignmentScreen> {
+
+  final TextEditingController titleController = TextEditingController();
+  final TextEditingController courseController = TextEditingController();
+
+  String priority = "Medium";
+  DateTime? selectDate;
+
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -33,6 +40,33 @@ class _AddAssignmentScreenState extends State<AddAssignmentScreen> {
                 border: OutlineInputBorder(),
               ),
             ),
+
+            const SizedBox(height: 16),
+
+            DropdownButtonFormField(
+              value: priority,
+              items:[
+                "High",
+                "Medium",
+                "Low"
+              ].map((level) => DropdownMenuItem(
+                value: level,
+                child: Text(level),
+              ))
+              .toList(),
+              onChanged: (value) {
+                setState(() {
+                  priority = value!;
+                });
+              },
+              decoration: const InputDecoration(
+                labelText: "Priority",
+                border: OutlineInputBorder(),
+              ),
+            ),
+
+            const SizedBox(height: 16),
+            
           ]
         )
       )
