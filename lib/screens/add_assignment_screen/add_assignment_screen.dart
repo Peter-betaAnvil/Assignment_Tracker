@@ -32,7 +32,7 @@ class _AddAssignmentScreenState extends State<AddAssignmentScreen> {
               ),
             ),
 
-            const SizedBox(height: 17),
+            const SizedBox(height: 16),
 
             TextField(
               decoration: const InputDecoration(
