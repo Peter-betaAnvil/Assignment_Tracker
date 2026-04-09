@@ -22,7 +22,7 @@ class _AddAssignmentScreenState extends State<AddAssignmentScreen> {
         title: const Text("Add Assignment"),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(17),
         child: Column(
           children:[
             TextField(
